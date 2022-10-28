@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vh & Vw Unites</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background: #333 url("/img/stars.jpg") no-repeat center center/cover;
+            color: #fff;
+            height: 100vh;
+            text-align: center;
+            padding: 2rem;
+            padding-top: 17rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            margin: 1rem 0;
+        }
+
+        .btn {
+            margin-top: 0.50rem;
+            text-decoration: none;
+            background: #f4f4f4;
+            color: #333;
+            padding: 0.75rem 2rem;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        /* Landscape Media Query */
+        @media (max-height: 450px) {
+            header {
+                padding-top: 7rem;
+            }
+        }
+
+        section {
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to our website!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur suscipit facilis autem, error eligendi nam.
+        </p>
+        <a href="#" class="btn">Find out more</a>
+    </header>
+
+    <section>
+        <h2>About Us</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugiat distinctio eum beatae, molestiae
+            necessitatibus aperiam porro facere sapiente quae eos ipsum laudantium dolorum accusamus deserunt? Officia
+            corporis non repellat recusandae! Ipsa at consectetur reprehenderit necessitatibus. Facilis natus maxime nam
+            ab eum, similique ratione impedit, maiores consequuntur vel molestiae facere.</p>
+    </section>
+</body>
+
+</html>

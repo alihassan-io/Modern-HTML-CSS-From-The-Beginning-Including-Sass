@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Columns</title>
+    <style>
+        #grid {
+            display: grid;
+            /* grid-template-columns: 200px auto 200px; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-columns: repeat(3, auto);
+            /* grid-gap: 1rem; */
+            gap: 1rem 2rem;
+        }
+
+        .item {
+            background: #f4f4f4;
+            border: 1px #dcd7da solid;
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grid">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+    </div>
+
+    <main>
+        <section>
+            <h2>Welcome To TG's Site</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti voluptas expedita iste eum culpa sit
+                vitae quod error soluta? Esse eveniet sit distinctio dicta nesciunt excepturi inventore molestias,
+                dolorum perspiciatis!</p>
+        </section>
+
+        <aside>
+            <h3>Blog</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, tenetur!</p>
+        </aside>
+    </main>
+</body>
+
+</html>

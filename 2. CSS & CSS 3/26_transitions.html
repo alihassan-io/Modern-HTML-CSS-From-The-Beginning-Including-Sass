@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #333;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: white;
+
+            /* transition-property: all;
+            transition-delay: 1s;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out; */
+
+            /* Shorthand - property/duration/timing-function/delay */
+            transition: all 1s ease-in-out;
+        }
+
+        .box:hover {
+            background: red;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+
+        /* 
+        TRANSITIONAL PROPERTIES
+        -Properties that have an identifiable halfway point
+
+        background-color 
+        background-position 
+        border-color 
+        border-width 
+        border-spacing 
+        bottom 
+        color
+        font-size 
+        font-weight 
+        height left 
+        letter-spacing 
+        line-height 
+        margin 
+        max-height 
+        max-width 
+        min-height 
+        min-width 
+        opacity 
+        outline-color 
+        outline-offset 
+        outline-width 
+        padding right 
+        text-indent 
+        text-shadow 
+        top 
+        vertical-align 
+        visibility 
+        width 
+        word-spacing 
+        z-index */
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

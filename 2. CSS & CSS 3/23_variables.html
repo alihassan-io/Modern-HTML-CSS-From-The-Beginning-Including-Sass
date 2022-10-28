@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables | Custom Properties</title>
+    <style>
+        :root {
+            --primary-color: steelblue;
+            --secondary-color: skyblue;
+            --light-color: #f4f4f4;
+            --dark-color: #333;
+            --text-light: #fff;
+            --max-width: 1100px;
+            --box-1-width: 1;
+            --box-2-width: 2;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--main-color);
+            line-height: 2rem;
+            text-align: center;
+        }
+
+        header {
+            background: var(--primary-color);
+            border-bottom: 5px var(--secondary-color) solid;
+            color: var(--text-light);
+            padding: 1rem 0;
+        }
+
+        .container {
+            display: flex;
+            max-width: var(--max-width);
+            margin: auto;
+        }
+
+        .box {
+            margin: 1rem;
+            padding: 1rem;
+            background: var(--primary-color);
+            border-bottom: 5px var(--secondary-color) solid;
+            color: var(--text-light);
+        }
+
+        .box>h2 {
+            border: 2px var(--secondary-color) solid;
+            margin-bottom: 10px;
+            padding: 7px;
+        }
+
+        .box-1 {
+            flex: var(--box-1-width);
+        }
+
+        .box-2 {
+            flex: var(--box-2-width);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Main Header</h1>
+    </header>
+    <div class="container">
+        <div class="box box-1">
+            <h2>Box 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis at quod vitae id, doloremque distinctio
+                odit corrupti veniam nesciunt. Cumque.</p>
+        </div>
+        <div class="box box-2">
+            <h2>Box 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur corrupti soluta esse quisquam
+                debitis fugiat cum ipsum totam consequatur repudiandae?</p>
+        </div>
+    </div>
+</body>
+
+</html>

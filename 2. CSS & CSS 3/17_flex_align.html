@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Align</title>
+    <style>
+        #container {
+            background: #555;
+            display: flex;
+            flex-wrap: wrap;
+
+            /* Align Items Horizontal */
+            justify-content: center;
+            /* 
+                Options:
+                    flex-start
+                    flex-end
+                    space-evenly
+                    space-between
+                    space-around
+                    center
+             */
+            height: 600px;
+
+            /* Align Items Vertical (must have height) */
+            align-items: center;
+            /* 
+                Options:
+                    flex-start
+                    flex-end
+                    stretch
+                    baseline
+                    center
+             */
+
+            /* Align Items Vertical where extra space (Align whole content vertically) */
+            /* align-content: flex-start; */
+            /* 
+                Options:
+                    flex-start
+                    flex-end
+                    stretch
+                    center
+                    space-between
+                    space-around
+             */
+        }
+
+        .item-2 {
+            align-self: flex-start;
+            order: 3;
+        }
+
+        .item-3 {
+            align-self: flex-end;
+            order: 1;
+        }
+
+        .item-1 {
+            order: 2;
+        }
+
+        .item {
+            background: #f4f4f4;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 5px;
+            margin: 10px;
+            /* flex-basis = width */
+            flex-basis: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="item item-1">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item item-2">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item item-3">
+            <h3>Item 3</h3>
+        </div>
+    </div>
+</body>
+
+</html>

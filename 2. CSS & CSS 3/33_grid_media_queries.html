@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Media Queries</title>
+    <style>
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        @media(max-width: 756px) {
+            #grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 500px) {
+            #grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grid">
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime recusandae explicabo, illo magnam omnis
+                iste deleniti voluptas soluta earum consectetur nobis ipsa aliquam nemo voluptatem nulla debitis
+                reprehenderit hic necessitatibus.</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime recusandae explicabo, illo magnam omnis
+                iste deleniti voluptas soluta earum consectetur nobis ipsa aliquam nemo voluptatem nulla debitis
+                reprehenderit hic necessitatibus.</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime recusandae explicabo, illo magnam omnis
+                iste deleniti voluptas soluta earum consectetur nobis ipsa aliquam nemo voluptatem nulla debitis
+                reprehenderit hic necessitatibus.</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime recusandae explicabo, illo magnam omnis
+                iste deleniti voluptas soluta earum consectetur nobis ipsa aliquam nemo voluptatem nulla debitis
+                reprehenderit hic necessitatibus.</p>
+        </div>
+    </div>
+</body>
+
+</html>

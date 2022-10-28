@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadows</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        h1.a {
+            /* h-shadow | v-shadow | color */
+            text-shadow: 5px 5px teal;
+        }
+
+        h1.b {
+            /* h-shadow | v-shadow | blur | color */
+            text-shadow: 5px 5px 10px teal;
+        }
+
+        h1.c {
+            /* Text White */
+            color: #fff;
+            text-shadow: 5px 5px 10px teal;
+        }
+
+        h1.d {
+            /* Negative Values */
+            text-shadow: -5px -5px 10px teal;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="a">Tech Guy Is Here!</h1>
+    <h1 class="b">Tech Guy Is Here!</h1>
+    <h1 class="c">Tech Guy Is Here!</h1>
+    <h1 class="d">Tech Guy Is Here!</h1>
+</body>
+
+</html>

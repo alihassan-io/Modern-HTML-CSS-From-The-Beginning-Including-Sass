@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadows</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .box {
+            background: coral;
+            color: #fff;
+            margin: 1rem;
+            padding: 1rem;
+
+            /* offset-x | offset-y | color */
+            /* box-shadow: 10px 10px teal; */
+            /* offset-x | offset-y | blur-radius | color */
+            /* box-shadow: 5px 5px 20px teal; */
+            /* Negative values */
+            /* box-shadow: -5px -5px 20px teal; */
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            /* box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3); */
+            /* inset | offset-x | offset-y | color */
+            /* box-shadow: inset -3px -3px teal; */
+            /* Multiple shadows */
+            /* box-shadow: 3px 3px teal, -3px -3px olive; */
+        }
+
+        #box-1 {
+            /* offset-x | offset-y | color */
+            box-shadow: 10px 10px teal;
+        }
+
+        #box-2 {
+            /* offset-x | offset-y | blur-radius | color */
+            box-shadow: 10px 10px 10px teal;
+        }
+
+        #box-3 {
+            /* Negative Values */
+            box-shadow: -10px -10px 10px teal;
+        }
+
+        #box-4 {
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        #box-5 {
+            /* inset | offset-x | offset-y | color */
+            box-shadow: inset 10px 10px teal;
+        }
+
+        #box-6 {
+            /* Multiple Shadows */
+            box-shadow: 3px 3px teal, -3px -3px olive;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h1>Box Shadow</h1>
+            <p>offset-x | offset-y | color</p>
+        </div>
+        <div id="box-2" class="box">
+            <h1>Blur Radius</h1>
+            <p>offset-x | offset-y | blur-radius | color</p>
+        </div>
+        <div id="box-3" class="box">
+            <h1>Negative Values</h1>
+            <p>box-shadow: -10px -10px 10px teal;</p>
+        </div>
+        <div id="box-4" class="box">
+            <h1>Spread Radius</h1>
+            <p>offset-x | offset-y | blur-radius | spread-radius | color</p>
+        </div>
+        <div id="box-5" class="box">
+            <h1>Inset</h1>
+            <p>inset | offset-x | offset-y | color</p>
+        </div>
+        <div id="box-6" class="box">
+            <h1>Multiple Shadows</h1>
+            <p>box-shadow: 3px 3px teal, -3px -3px olive;</p>
+        </div>
+    </div>
+</body>
+
+</html>
