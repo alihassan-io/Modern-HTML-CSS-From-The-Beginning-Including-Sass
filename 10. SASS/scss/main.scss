@@ -1,0 +1,83 @@
+@import "variables";
+@import "functions";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $light-color;
+    font-family: $family-stack;
+    color: set-text-color($light-color);
+}
+
+// Header
+header {
+    background: $dark-color;
+    color: set-text-color($dark-color);
+    padding: 1rem;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+// Sections
+.section {
+    padding: 3rem;
+    color: set-text-color($light-color);
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+
+    &-a {
+        background: $primary-color;
+    }
+
+    &-b {
+        background: $secondary-color;
+    }
+
+    &-c {
+        background: coral;
+        color: set-text-color(coral);
+    }
+}
+
+// Inheritance
+%btn-shared {
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    text-decoration: none;
+}
+
+.btn {
+    &-light {
+        @extend %btn-shared;
+        background: #fff;
+        color: set-text-color(#fff);
+
+        &:hover {
+            @include transform(rotate(20deg));
+            background: darken($color: #fff, $amount: 10%);
+        }
+    }
+
+    &-dark {
+        @extend %btn-shared;
+        background: #333;
+        color: set-text-color(#333);
+
+        &:hover {
+            @include transform(translateX(20px));
+            background: lighten($color: #333, $amount: 10%);
+        }
+    }
+}
