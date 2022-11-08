@@ -1,0 +1,136 @@
+.container {
+    max-width: $website-width;
+    margin: auto;
+    padding: 0 1.5rem;
+    overflow: hidden;
+}
+
+// Buttons
+%btn-shared {
+    display: inline-block;
+    border: none;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn {
+    &-main {
+        @extend %btn-shared;
+        background: $main-color;
+        color: #f4f4f4;
+    }
+
+    &-light {
+        @extend %btn-shared;
+        background: $light-color;
+        color: #333;
+    }
+
+    &-dark {
+        @extend %btn-shared;
+        background: $dark-color;
+        color: #f4f4f4;
+    }
+}
+
+a[class^='btn-']:hover,
+button[class^='btn-']:hover,
+input[class^='btn-']:hover {
+    background: $main-color;
+}
+
+// Background
+.bg {
+
+    // BG Main
+    &-main {
+        background: $main-color;
+        color: set-text-color($main-color);
+    }
+
+    // BG Light
+    &-light {
+        background: $light-color;
+        color: set-text-color($light-color);
+    }
+
+    // BG Dark
+    &-dark {
+        background: $dark-color;
+        color: set-text-color($dark-color);
+    }
+
+    // BG Medium
+    &-medium {
+        background: $medium-color;
+        color: set-text-color($medium-color);
+    }
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+// Padding
+.py {
+    &-1 {
+        padding: 1rem 0;
+    }
+
+    &-2 {
+        padding: 2rem 0;
+    }
+
+    &-3 {
+        padding: 3rem 0;
+    }
+
+    &-4 {
+        padding: 4rem 0;
+    }
+}
+
+// Margin
+.my {
+    &-1 {
+        margin: 1rem 0;
+    }
+
+    &-2 {
+        margin: 2rem 0;
+    }
+
+    &-3 {
+        margin: 3rem 0;
+    }
+
+    &-4 {
+        margin: 4rem 0;
+    }
+}
+
+// Section Title
+.section-title {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    display: block;
+    text-align: center;
+}
+
+// Bottom Line
+.bottom {
+    &-line {
+        background: $main-color;
+        width: 3rem;
+        height: 2px;
+        margin: 0 auto 1rem auto;
+    }
+}

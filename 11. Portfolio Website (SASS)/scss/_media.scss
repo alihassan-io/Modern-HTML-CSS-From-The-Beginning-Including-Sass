@@ -1,0 +1,156 @@
+// Tablet & Smaller
+@media(max-width: 800px) {
+    #header-home {
+        height: 30rem;
+
+        .header-content {
+            padding-top: 5rem;
+        }
+    }
+}
+
+// Smartphones
+@media (max-width: 500px) {
+    #main-nav {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        li {
+            padding: 1rem;
+        }
+    }
+
+    #header {
+        &-home {
+            height: 10rem;
+            border-bottom: 3px solid $main-color;
+            background-position: 20% 30%;
+
+            .header-content {
+                display: none;
+            }
+        }
+
+        &-inner {
+            height: 10rem;
+        }
+    }
+
+    // Home Sections
+    #home {
+        &-a {
+            .specials {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &-b {
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &-c {
+            .process {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    // About Sections
+    #about {
+        &-a {
+            .about-info {
+                grid-template-areas:
+                    'bioimg'
+                    'bio'
+                    'aw1'
+                    'aw2'
+                    'aw3';
+            }
+        }
+
+        &-c {
+            display: none;
+        }
+
+        &-d {
+            .testimonials {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    // Work
+    #work {
+        &-a {
+            .items {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    // Contact
+    #contact {
+        &-a {
+            .text-fields {
+                grid-template-areas:
+                    'name'
+                    'subject'
+                    'email'
+                    'phone'
+                    'message';
+            }
+        }
+
+        &-b {
+            .contact-info {
+                grid-template-columns: 1fr;
+
+                &>div:first-child,
+                &>div:nth-child(2) {
+                    margin-bottom: 1rem;
+                    padding-bottom: 1rem;
+                    border-bottom: 1px #555 solid;
+                }
+            }
+        }
+
+        &-c {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    // Footer
+    #main-footer {
+        .footer-content {
+            flex-direction: column;
+        }
+    }
+}
+
+// Landscape
+@media (max-height: 580px) {
+    #header-home {
+        .header-content {
+            padding-top: 3rem;
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media (max-height: 330px) {
+    #header-home {
+        .header-content {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
