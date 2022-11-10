@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black & White</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            background: #fff;
+        }
+
+        #black {
+            height: 100vh;
+            width: 50vw;
+            background: black;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .mini {
+            height: 200px;
+            width: 200px;
+        }
+
+        .mini-white {
+            background: #fff;
+            align-self: center;
+        }
+
+        #white {
+            height: 100vh;
+            width: 50vw;
+            background: white;
+            display: flex;
+        }
+
+        .mini-black {
+            background: black;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="black">
+        <div class="mini mini-white"></div>
+    </div>
+    <div id="white">
+        <div class="mini mini-black"></div>
+    </div>
+</body>
+
+</html>
