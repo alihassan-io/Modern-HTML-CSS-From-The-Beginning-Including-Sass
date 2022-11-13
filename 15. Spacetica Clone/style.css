@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f4f9;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 15px;
+}
+
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background: royalblue;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    padding: 0.3rem 0.5rem;
+}
+
+/* Header */
+#main-header {
+    background: #ffffff;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+#main-header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#main-header .header-content h1 {
+    font-size: 1.5rem;
+}
+
+#main-header .header-content a {
+    color: #000;
+    font-size: 0.9rem;
+    padding: 2rem;
+}
+
+#main-header .header-content a:hover {
+    color: slateblue;
+}
+
+/* Main */
+#main {
+    margin: 2rem 0;
+}
+
+#main .main-content {
+    padding: 1rem;
+    text-align: center;
+    color: #555;
+    background: #ffffff;
+    border: 1px solid rgb(221, 221, 221)
+}
+
+#main .main-content h2 {
+    padding: 1rem 0;
+}
+
+#main .main-content img {
+    display: inline-block;
+    width: 100%;
+    padding: 2rem;
+}
+
+#main .main-content p {
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+/* Footer */
+#footer-main .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+}
+
+#footer-main .footer-content .copyrights {
+    color: #8c8c8c;
+}
+
+#footer-main .footer-content .links ul {
+    display: flex;
+}
+
+#footer-main .footer-content .links ul li {
+    margin-left: 1rem;
+}
+
+#footer-main .footer-content .links ul li a {
+    color: #333;
+    padding: 0.5rem;
+}
+
+#footer-main .footer-content .links ul li a:hover {
+    background: black;
+    color: white;
+}
