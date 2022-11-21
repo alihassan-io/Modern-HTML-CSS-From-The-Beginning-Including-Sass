@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d827952aa5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Loan Calculator</title>
+</head>
+
+<body>
+    <main id="calculator">
+        <div class="container">
+            <div class="calculator-content">
+                <!-- <div class="alert">
+                    <p>Please Check Your Values!</p>
+                </div> -->
+                <div class="input-section">
+                    <h2>Loan Calculator</h2>
+                    <form id="loan-form">
+                        <div class="form-group amount">
+                            <span class="i">$</span>
+                            <!-- <i class="fas fa-dollar-sign"></i> -->
+                            <input type="number" name="amount" id="amount" placeholder="Loan Amount">
+                        </div>
+                        <div class="form-group interest">
+                            <span class="i">%</span>
+                            <!-- <i class="fas fa-percentage"></i> -->
+                            <input type="number" name="interest" id="interest" placeholder="Annual Interest">
+                        </div>
+                        <div class="form-group year">
+                            <input type="number" name="interest" id="year" placeholder="Repayment Year">
+                        </div>
+                        <input type="submit" class="btn btn-dark" value="Calculate">
+                    </form>
+                </div>
+                <div class="result-section">
+                    <div class="calculating">
+                        <h4>Calculating...</h4>
+                        <img src="img/loading.gif" alt="loading">
+                    </div>
+                    <div class="result">
+                        <h4>Results</h4>
+                        <ul>
+                            <li>
+                                <span>Monthly Payment</span>
+                                <span id="monthly-payment" class="monthly-payment"></span>
+                            </li>
+                            <li>
+                                <span>Total Amount</span>
+                                <span id="total-amount" class="total-amount"></span>
+                            </li>
+                            <li>
+                                <span>Total Interest</span>
+                                <span id="total-interest" class="total-interest"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
