@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/d827952aa5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>DOM Manipulation & Events</title>
+</head>
+
+<body>
+  <main id="system">
+    <div class="container">
+      <div class="system-content">
+        <section class="input-section">
+          <h1 class="task-list">Task List</h1>
+          <form id="task-form">
+            <input type="text" name="task" id="task" placeholder="Enter New Task" />
+            <input type="submit" class="btn btn-primary" value="Add Task" />
+          </form>
+        </section>
+
+        <section class="output-section">
+          <h3 class="tasks-heading">Tasks</h3>
+          <input type="text" name="filter" id="filter" placeholder="Filter Tasks" />
+          <ul class="collection">
+          </ul>
+          <a href="#" class="clear-tasks btn btn-dark">Clear Task</a>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
