@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+/* Utilities */
+.container {
+    max-width: 660px;
+    margin: auto;
+}
+
+/* Books */
+.books-content {
+    padding: 1rem;
+}
+
+/* Input Section */
+.books-content .input-section {
+    border-bottom: 2px solid #d4d4d4;
+    padding-bottom: 2.5rem;
+}
+
+.books-content .input-section .heading {
+    margin-bottom: 1rem;
+    font-size: 25px;
+}
+
+.books-content .input-section .message {
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    display: none;
+}
+
+.books-content .input-section .input-data label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.books-content .input-section .input-data input {
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+    margin: 0.2rem 0 0.7rem 0;
+    border: 1px #d4d4d4 solid;
+    border-radius: 3px;
+}
+
+.books-content .input-section .input-data .btn {
+    padding: 0.4rem 1rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px #d4d4d4 solid;
+    background: #fff;
+}
+
+/* Output Section */
+.books-content .output-section {
+    padding: 2rem 0;
+}
+
+.books-content .output-section table {
+    /* display: block; */
+    /* background: rgb(196, 196, 233); */
+    text-align: left;
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 14px;
+}
+
+.books-content .output-section table tr {
+    width: 100%;
+    background: #fff;
+}
+
+.books-content .output-section table .delete-item {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.books-content .output-section table th,
+.books-content .output-section table td {
+    padding: 0.6rem 0;
+    border-bottom: 1px #d4d4d4 solid;
+}

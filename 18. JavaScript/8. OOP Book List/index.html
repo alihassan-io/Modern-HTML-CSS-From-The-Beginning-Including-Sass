@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Book List</title>
+  </head>
+
+  <body>
+    <main id="books">
+      <div class="container">
+        <div class="books-content">
+          <section class="input-section">
+            <div class="heading">
+              <h1>Add Book</h1>
+            </div>
+            <div class="message">
+              <!-- <p class="message-wrapper">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+            </div>
+            <div class="input-data">
+              <label for="book-title">Book Title</label>
+              <input type="text" name="book-title" id="book-title" />
+
+              <label for="author">Author</label>
+              <input type="text" name="author" id="author" />
+
+              <label for="isbn">ISBN</label>
+              <input type="text" name="isbn" id="isbn" />
+
+              <button class="btn">Submit</button>
+            </div>
+          </section>
+          <section class="output-section">
+            <table>
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Author</th>
+                  <th>ISBN</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="book-list">
+                <!-- <tr>
+                  <td>Power of Habit</td>
+                  <td>Charles Dhugg</td>
+                  <td>12548</td>
+                  <td class="delete-item">
+                    <a href="#" class="delete-item">x</a>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- <script src="app.js"></script> -->
+    <script src="appes2015.js"></script>
+  </body>
+</html>
